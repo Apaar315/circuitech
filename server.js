@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 // Serve static files from the "public" folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-const USERS = { username: 'admin', password: '123456' };
+const USERS = { username: 'admin', password: 'abcd123' };
 
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
